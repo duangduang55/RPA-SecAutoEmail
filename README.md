@@ -17,7 +17,7 @@
 
 ## 📂 目录结构说明
 
-\`\`\`text
+```text
 AutoEmailProject/                  <-- 项目主文件夹
 │
 ├── auto_email_sender.py           <-- 自动发送对账单邮件 Python 核心代码
@@ -35,22 +35,22 @@ AutoEmailProject/                  <-- 项目主文件夹
         ├── 102300033333客户C补充.rar
         ├── 102300033333客户D补充.zip
         └── sent_records.txt           <-- 发送成功后程序自动生成的防重本
-\`\`\`
+```
 
 ## 🚀 快速开始
 
 ### 1. 环境依赖
 确保您的系统已安装 Python 3.x，然后在终端中运行以下命令安装所需依赖：
-\`\`\`bash
+```bash
 pip install schedule chinesecalendar
-\`\`\`
+```
 
 ### 2. 配置准备
-1. 复制一份 \`config.ini\` 并填入您的真实 SMTP 邮箱账号和授权码。
-2. 准备一份 \`email_mapping.csv\`，包含 \`资金账号\` 和 \`收件人邮箱\` 两列内容。
+1. 复制一份 `config.ini` 并填入您的真实 SMTP 邮箱账号和授权码。
+2. 准备一份 `email_mapping.csv`，包含 `资金账号` 和 `收件人邮箱` 两列内容。
 
 ### 3. 运行程序
-\`\`\`bash
+```bash
 python auto_email_sender.py
-\`\`\`
+```
 程序启动后将进入守护模式，在您设定的 `config.ini` 时间点自动唤醒执行。
