@@ -2,7 +2,7 @@
 .DS_Store
 
 # 忽略包含账号密码的配置文件
-# config.ini
+config.ini
 
 # 忽略包含客户隐私的名单
 # *.csv
